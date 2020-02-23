@@ -1,0 +1,428 @@
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+button,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+strong,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+hr {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    font-family: 'Noto Sans Korean', 'Malgun Gothic', '맑은고딕', '돋움', dotum, sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: lightgoldenrodyellow;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal
+}
+
+ol,
+ul,
+li {
+    list-style: none
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+form,
+fieldset,
+iframe {
+    display: block;
+    border: 0
+}
+
+img,
+button {
+    border: 0 none;
+    vertical-align: top;
+}
+
+hr {
+    height: 0;
+    display: none
+}
+
+i,
+em,
+address {
+    font-style: normal
+}
+
+label,
+button {
+    cursor: pointer
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+caption,
+legend {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    text-indent: -100%;
+    white-space: nowrap;
+    z-index: -1
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+details,
+menu,
+figure,
+figcaption {
+    display: block;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: 'Noto Sans Korean', 'Malgun Gothic', '맑은고딕', '돋움', dotum, sans-serif;
+    font-size: 15px;
+    color: #919090;
+    line-height: 1.0;
+    letter-spacing: 0;
+    vertical-align: middle;
+    border: none;
+}
+
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none
+}
+
+a {
+    color: black;
+    text-decoration: none
+}
+
+a:link,
+a:visited {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.blind {
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999em;
+    visibility: hidden;
+    outline: none;
+    z-index: -1;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Noto Sans Korean', 'Malgun Gothic', '맑은고딕', '돋움', dotum, sans-serif;
+    margin: 0;
+    background-color: lightgoldenrodyellow;
+}
+
+button {
+    font-family: 'Noto Sans Korean', 'Malgun Gothic', '맑은고딕', '돋움', dotum, sans-serif;
+}
+
+/*layout*/
+
+#title {
+    background: gold;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 87px;
+    z-index: 11;
+}
+
+#title h1 {
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    padding-left: 180px;
+}
+
+#wrap header {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    background-color: palegoldenrod;
+    z-index: 11;
+    top: 87px;
+    left: 0px;
+}
+
+#wrap header nav {
+    width: 100%;
+    height: 100%;
+}
+
+#wrap header nav input {
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: -5px;
+}
+
+#wrap header nav input:hover {
+    color: blue;
+}
+
+#wrap header nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+#wrap header nav ul li {
+    margin: 0 15px 10px 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+#wrap header nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#wrap header nav ul li:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: 0px;
+    top: 13px;
+}
+
+#wrap header nav ul li:hover a {
+    color: red;
+}
+
+#wrap header nav ul li:hover:after {
+    color: red;
+}
+
+#container {
+    margin: 87px 15px 0px 15px;
+    padding-top: 10px;
+    position: relative;
+
+}
+
+#container p {
+    margin-bottom: 10px;
+}
+
+#container article {
+    font-size: 16px;
+}
+
+#container h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#container img {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#wrap footer {
+    width: 180px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding: 5px;
+    font-size: 11px;
+    color: gray;
+    z-index: 12;
+}
+
+#wrap footer nav {
+    width: 100%;
+    height: 100%;
+}
+
+#wrap footer nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#wrap footer nav ul li {
+    margin: 2px;
+    padding-left: 5px;
+    position: relative;
+}
+
+#wrap footer nav ul li a.instar {
+    background-color: pink;
+}
+
+#wrap footer nav ul li a.face {
+    background-color: lightblue
+}
+
+
+#wrap footer p {
+    font-style: italic;
+    padding: 5px
+}
+
+footer ul li a:hover {
+    font-weight: bold;
+}
+
+@media(max-width:768px) {
+    #title {
+        position: absolute;
+    }
+
+    #wrap {
+        position: absolute;
+        padding-left: 0px;
+        padding-top: 210px;
+    }
+
+    #wrap header {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: 87px;
+    }
+
+    #wrap header nav input {
+        margin-top: 0px;
+        margin-bottom: -20px;
+    }
+
+    #wrap header nav ul {
+        margin-bottom: 5px;
+    }
+
+    #wrap header nav ul li {
+        margin: 0 15px 0px 15px;
+
+    }
+
+    #wrap footer {
+        width: 100%;
+        position: relative;
+
+    }
+
+    #wrap footer p {
+        margin-top: 0px;
+        margin-left: 5px;
+        padding: 0px
+    }
+}
